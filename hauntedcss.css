@@ -127,6 +127,12 @@ footer {
 }
 
 /* -------- Navigation buttons on each page. -------- */
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 10px; 
+}
+
 .nav-buttons {
     background: linear-gradient(180deg, #2a0f00, #000);
     color: #ff7518; /* pumpkin orange */
@@ -353,3 +359,4 @@ button.ticket:hover {
     transform: scale(1.05);
     box-shadow: 0 0 20px #ff6600;
 }
+
