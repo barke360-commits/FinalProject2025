@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Twisted Nightmare Haunted House</title>
+  <link rel="stylesheet" href="hauntedcss.css">
+  <script src="tickets.js" defer></script>
+</head>
+
+<body>
+
+<!-- Header  -->
+  <header>
+<img src="images/tnlogotransparent.gif" width="400" align="center">
+
+<nav align="center">
+<button class="nav-buttons" onclick="location.href='index.html'">Home</button>
+<button class="nav-buttons" onclick="location.href='tickets.html'">Tickets</button>
+<button class="nav-buttons" onclick="location.href='photos.html'">Photos</button>
+<button class="nav-buttons" onclick="location.href='links.html'">Links</button>
+<button class="nav-buttons" onclick="location.href='about.html'">About</button>
+<button class="nav-buttons" onclick="location.href='stories.html'">Scary Stories</button>
+</nav>
+
+  </header>
+
+<h1>Calculate Ticket Cost</h1>
+<center>
+
+    <form id="ticketForm" class="ticket">
+        <label for="thursday" class="ticket">Thursday ($8):</label>
+        <input type="text" id="thursday" name="thursday" value="0" class="ticket"><br>
+
+        <label for="friday" class="ticket">Friday ($10):</label>
+        <input type="text" id="friday" name="friday" value="0" class="ticket"><br>
+
+        <label for="saturday" class="ticket">Saturday ($10):</label>
+        <input type="text" id="saturday" name="saturday" value="0" class="ticket"><br>
+
+        <label for="halloween" class="ticket">Halloween Night ($12):</label>
+        <input type="text" id="halloween" name="halloween" value="0" class="ticket"><br>
+
+        <button type="button" onclick="calculateTotal()" class="ticket">Calculate Total</button>
+    </form>
+</center>
+
+
+<h2 id="result"></h2>
+
+
+
+
+<!-- Footer -->
+  <footer>
+<p>
+(c) Twisted Nightmare LLC<br>
+</p>
+  </footer>
+
+
+ 
+
+</body>
+</html>

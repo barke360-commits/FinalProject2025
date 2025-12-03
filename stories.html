@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Twisted Nightmare Haunted House</title>
+  <link rel="stylesheet" href="hauntedcss.css">
+
+</head>
+
+<body>
+
+<!-- Header  -->
+  <header>
+<img src="images/tnlogotransparent.gif" width="400" align="center">
+
+<nav align="center">
+<button class="nav-buttons" onclick="location.href='index.html'">Home</button>
+<button class="nav-buttons" onclick="location.href='tickets.html'">Tickets</button>
+<button class="nav-buttons" onclick="location.href='photos.html'">Photos</button>
+<button class="nav-buttons" onclick="location.href='links.html'">Links</button>
+<button class="nav-buttons" onclick="location.href='about.html'">About</button>
+<button class="nav-buttons" onclick="location.href='stories.html'">Scary Stories</button>
+</nav>
+
+</header>
+
+<h1>One Sentence Scary Stories</h1>
+
+<div class="stories">
+    <button class="nav-buttons" onclick="generateStory()">Generate Random Story</button>
+    <h3 id="storyOutput" style="margin-top: 30px; color:#ffddb8;"></h3>
+</div>
+
+
+
+
+<!---SCript for short stories -->
+<script>
+function generateStory() {
+    const stories = [
+        "Her reflection in the mirror blinked, but she hadn’t.",
+        "They say cats have 9 lives, but I swear I’ve buried him at least 11 times.",
+        "The last man on Earth sat alone in a room. Then, there was a knock on the door.",
+		"They delivered the mannequins in bubble wrap. From the other room I begin to hear popping.",
+		"You just won a staring contest against a doll."
+    ];
+
+    const randomIndex = Math.floor(Math.random() * stories.length);
+    document.getElementById("storyOutput").textContent = stories[randomIndex];
+}
+</script>
+
+<!-- Footer -->
+  <footer>
+<p>
+(c) Twisted Nightmare LLC<br>
+</p>
+  </footer>
+
+
+ 
+
+</body>
+</html>
